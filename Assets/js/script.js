@@ -63,6 +63,9 @@ $(document).ready(function () {
             console.log(response);
 
             $("#results").empty();
+            $("#forecast").empty();
+            $("#forecast2").empty();
+            
 
             var forecastDiv = $("<div>");
             $("#forecast").append(forecastDiv);
