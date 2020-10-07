@@ -62,7 +62,7 @@ $(document).ready(function () {
         }).then(function (response) {
             console.log(response);
 
-            $("#forecast").empty();
+            $("#results").empty();
 
             var forecastDiv = $("<div>");
             $("#forecast").append(forecastDiv);
