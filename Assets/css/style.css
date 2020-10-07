@@ -1,0 +1,9 @@
+.cityBtn {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 94%;
+}
+
+.cityName {
+    text-transform: capitalize;
+}
