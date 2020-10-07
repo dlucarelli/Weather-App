@@ -11,8 +11,8 @@ $(document).ready(function () {
 
 
         var city = $(this).attr("data-name")
-        var cityURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=42c350817d56f82945a139c5b4898ee8";
-        var forecastURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=42c350817d56f82945a139c5b4898ee8";
+        var cityURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=42c350817d56f82945a139c5b4898ee8";
+        var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=42c350817d56f82945a139c5b4898ee8";
 
         $.ajax({
             url: cityURL,
@@ -29,7 +29,7 @@ $(document).ready(function () {
             var today = moment().format("(" + 'L' + ")");
 
             var cityIconCode = response.weather[0].icon;
-            var cityIconURL = "http://openweathermap.org/img/wn/" + cityIconCode + ".png";
+            var cityIconURL = "https://openweathermap.org/img/wn/" + cityIconCode + ".png";
             console.log(cityIconURL);
             var cityIcon = $("<img>").attr("src", cityIconURL);
             console.log(cityIcon);
